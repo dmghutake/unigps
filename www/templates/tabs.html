@@ -5,15 +5,19 @@ navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
+  <!-- Map Tab -->
+  <ion-tab title="Map" icon-off="ion-android-map" icon-on="ion-android-map" href="#/tab/map">
+    <ion-nav-view name="tab-map"></ion-nav-view>
+  </ion-tab>
 
   <!-- Discover Tab -->
-  <ion-tab title="Vehicle" icon-off="ion-radio-waves" icon-on="ion-radio-waves" href="#/tab/discover">
+  <ion-tab title="Vehicle" icon-off="ion-android-car" icon-on="ion-android-car" href="#/tab/discover">
     <ion-nav-view name="tab-vehicle"></ion-nav-view>
   </ion-tab>
 
 
   <!-- Favorites Tab -->
-  <ion-tab title="Group Vehicles" icon-off="ion-music-note" icon-on="ion-music-note" badge="favCount()" badge-style="badge-assertive" on-select="enteringFavorites()" on-deselect="leavingFavorites()" href="#/tab/groupvehicles">
+  <ion-tab title="Group Vehicles" icon-off="ion-android-locate" icon-on="ion-android-locate" badge="favCount()" badge-style="badge-assertive" on-select="enteringFavorites()" on-deselect="leavingFavorites()" href="#/tab/groupvehicles">
     <ion-nav-view name="tab-groupvehicles"></ion-nav-view>
   </ion-tab>
 

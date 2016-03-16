@@ -1,0 +1,23 @@
+ <ion-view title="Map">
+    <ion-content class="has-header padding">
+
+      <div class="login-form">
+        <div class="card">
+          <div class="list">
+            <label class="item item-input">
+              <input type="date" ng-model="form.fromDate" placeholder="Enter from date">
+            </label>
+            <label class="item item-input">
+              <input type="date" ng-model="form.toDate" placeholder="Enter to date">
+            </label>
+          </div>
+        </div>
+    <!-- map directive-->
+    <app-map style="height:400px;margin:12px;box-shadow:0 3px 25px black;"
+        center="basel"
+        zoom="15"
+        markers="whoiswhere"
+    	>
+    </app-map>
+  </ion-content>
+  </ion-view>
